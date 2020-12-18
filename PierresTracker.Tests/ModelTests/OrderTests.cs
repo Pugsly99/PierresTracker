@@ -91,11 +91,12 @@ namespace PierresTracker.Tests
 
         int amount = 4;
         newOrder.Bread(amount);
+        newOrder.Pastry(amount);
 
         int result = newOrder.Price;
 
 
-        Assert.AreEqual(result, 20);
+        Assert.AreEqual(result, 27);
       }
 
       [TestMethod]
