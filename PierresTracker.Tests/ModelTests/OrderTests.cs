@@ -128,5 +128,20 @@ namespace PierresTracker.Tests
 
         Assert.AreEqual(result, 4);
       }
+
+      [TestMethod]
+      public void GetDate_ReturnOrderDate_Order()
+      {
+        string name = "Test name";
+        Order newOrder = new Order(name);
+
+        string date = "Dec, 18, 2020";
+        newOrder.GetDate(date);
+
+        string result = newOrder.Date;
+
+
+        Assert.AreEqual(result, date);
+      }
   }
 }
