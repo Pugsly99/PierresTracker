@@ -67,5 +67,20 @@ namespace PierresTracker.Tests
 
       Assert.AreEqual(newOrderTwo, result);
     }
+
+    [TestMethod]
+      public void GetDescription_ReturnOrderDescription_Order()
+      {
+        string name = "Test Order1";
+        Order newOrder = new Order(name);
+
+        string description = "this is a test";
+        newOrder.GetDescription(description);
+
+        string result = newOrder.Description;
+
+
+        Assert.AreEqual(result, description);
+      }
   }
 }
