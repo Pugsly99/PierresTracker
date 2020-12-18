@@ -54,5 +54,18 @@ namespace PierresTracker.Tests
 
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnOrderById_Order()
+    {
+      string titleOne = "title1";
+      string titleTwo = "title2"; 
+      Order newOrderOne = new Order(titleOne);
+      Order newOrderTwo = new Order(titleTwo); 
+
+      Order result = Order.Find(2);
+
+      Assert.AreEqual(newOrderTwo, result);
+    }
   }
 }
