@@ -79,5 +79,20 @@ namespace PierresTracker.Tests
 
         CollectionAssert.AreEqual(newList, result);
       }
+
+      [TestMethod]
+      public void GetDescription_ReturnVendorDescription_Vendor()
+      {
+        string name = "Test Vendor1";
+        Vendor newVendor = new Vendor(name);
+
+        string description = "this is a test";
+        newVendor.GetDescription(description);
+
+        string result = newVendor.Description;
+
+
+        Assert.AreEqual(result, description);
+      }
     }   
 }
