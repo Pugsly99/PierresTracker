@@ -28,5 +28,20 @@ namespace PierresTracker.Tests
       string result = newOrder.Title;
       Assert.AreEqual(title, result);
     }
+
+    [TestMethod]
+
+    public void GetAll_ReturnsAll_OrderList()
+    {
+      string titleOne = "title1";
+      string titleTwo = "title2"; 
+      Order newOrderOne = new Order(titleOne);
+      Order newOrderTwo = new Order(titleTwo);
+      List<Order> newOrders = new List<Order> { newOrderOne,  newOrderTwo };
+
+      List<Order> result = Order.GetAll();
+
+      CollectionAssert.AreEqual(newOrders, result);
+    }
   }
 }
