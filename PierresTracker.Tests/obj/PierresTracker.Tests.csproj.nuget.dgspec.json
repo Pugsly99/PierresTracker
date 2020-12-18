@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker.Tests\\PierresTracker.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker.Tests\\PierresTracker.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker.Tests\\PierresTracker.Tests.csproj",
+        "projectName": "PierresTracker.Tests",
+        "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker.Tests\\PierresTracker.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ryland\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ryland\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\PierresTracker.csproj": {
+                "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\PierresTracker.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\PierresTracker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\PierresTracker.csproj",
+        "projectName": "PierresTracker",
+        "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\PierresTracker.csproj",
+        "packagesPath": "C:\\Users\\Ryland\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ryland\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
