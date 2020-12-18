@@ -43,5 +43,16 @@ namespace PierresTracker.Tests
 
       CollectionAssert.AreEqual(newOrders, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnIdOfRecord_Int()
+    {
+      string title = "title";
+      Order newOrder = new Order(title);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(1, result);
+    }
   }
 }
