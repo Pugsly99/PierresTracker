@@ -97,5 +97,20 @@ namespace PierresTracker.Tests
 
         Assert.AreEqual(result, 20);
       }
+
+      [TestMethod]
+      public void GetAmount_ReturnOrderBreadAmount_Order()
+      {
+        string name = "Test Order1";
+        Order newOrder = new Order(name);
+
+        int amount = 4;
+        newOrder.Bread(amount);
+
+        int result = newOrder.BreadAmount;
+
+
+        Assert.AreEqual(result, 6);
+      }
   }
 }
