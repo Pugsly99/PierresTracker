@@ -112,5 +112,20 @@ namespace PierresTracker.Tests
 
         Assert.AreEqual(result, 6);
       }
+
+      [TestMethod]
+      public void GetAmount_ReturnOrderPastryAmount_Order()
+      {
+        string name = "Test Order1";
+        Order newOrder = new Order(name);
+
+        int amount = 4;
+        newOrder.Pastry(amount);
+
+        int result = newOrder.PastryAmount;
+
+
+        Assert.AreEqual(result, 4);
+      }
   }
 }
