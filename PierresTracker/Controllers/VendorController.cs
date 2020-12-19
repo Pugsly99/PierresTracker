@@ -46,8 +46,8 @@ namespace PierresTracker.Controllers
       Order newOrder = new Order(orderDescription);
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
-      model.Add("items", vendorOrders);
-      model.Add("category", foundVendor);
+      model.Add("order", vendorOrders);
+      model.Add("vendor", foundVendor);
       return View("Show", model);
     }
   }    
