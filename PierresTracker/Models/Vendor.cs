@@ -15,7 +15,12 @@ namespace PierresTracker.Models
       Name = name;
       _instances.Add(this);
       Id = _instances.Count;
-      Orders = new List<Orders> { };
+      Orders = new List<Order> { };
+    }
+
+    public void GetDescription(string description)
+    {
+      Description = description;
     }
 
     public static void ClearAll()
