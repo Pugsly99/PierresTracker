@@ -21,9 +21,9 @@ namespace PierresTracker.Controllers
     }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string vendorName)
+    public ActionResult Create(string vendorName, string vendorDescription)
     {
-      Vendor newVendor = new Vendor(vendorName);
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
       return RedirectToAction("Index");
     }
 
@@ -39,16 +39,25 @@ namespace PierresTracker.Controllers
     }
 
     [HttpPost("/vendors/{vendorId}/orders")]
-    public ActionResult Create(int vendorId, string orderDescription)
+    public ActionResult Create(int vendorId, string orderTitle, string orderDescription, int orderPrice, string orderDate)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(orderDescription);
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
-      model.Add("order", vendorOrders);
+      model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
+    }
+
+    [HttpPost("/vendors/{id}/")]
+    public ActionResult Delete(int id)
+    {
+      Vendor foundVendor = Vendor.Find(id);
+      List<Order> vendorOrders =  foundVendor.Orders;
+      vendorOrders.Clear();
+      return View("Destroy", foundVendor);
     }
   }    
 }
