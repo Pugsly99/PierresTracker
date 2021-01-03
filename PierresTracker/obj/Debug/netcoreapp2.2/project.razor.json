@@ -1887,6 +1887,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Vendors\\Delete.cshtml",
+      "TargetPath": "Views\\Vendors\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Vendors\\Show.cshtml",
       "TargetPath": "Views\\Vendors\\Show.cshtml",
       "FileKind": "mvc"
