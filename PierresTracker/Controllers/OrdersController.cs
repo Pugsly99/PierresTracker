@@ -24,10 +24,13 @@ namespace PierresTracker.Controllers
       return View(model);
     }
 
-    [HttpPost("/orders/delete")]
-    public ActionResult DeleteAll()
+    [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
+    public ActionResult Delete(int vendorId, int orderId)
     {
-      Order.ClearAll();
+      Order foundorder=Order.Find(orderId);
+      Vendor foundVendor = Vendor.Find(vendorId);
+      foundVendor.RemoveOrder(foundorder);
+      
       return View();
     }
   }
