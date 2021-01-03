@@ -46,9 +46,9 @@ _This means .NET and C# are installed and our computer recognizes the dotnet com
 
 1. _Navigate to the "PierresTracker.Solution/" folder in the command line._
 
-2. _Run the following command: $ npm build_
+2. _Run the following command: $ dotnet build_
 
-3. _Finilly, run the following command to execute this compiled code: $ npm start_
+3. _Finilly, run the following command to execute this compiled code: $ dotnet run_
 
 
 ### <span style="color:#c4f4ef">Run Tests</span> 
