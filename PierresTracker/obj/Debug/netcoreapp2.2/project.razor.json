@@ -1892,11 +1892,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Order\\DeleteAll.cshtml",
-      "TargetPath": "Views\\Order\\DeleteAll.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Vendors\\Show.cshtml",
       "TargetPath": "Views\\Vendors\\Show.cshtml",
       "FileKind": "mvc"
@@ -1914,6 +1909,11 @@
     {
       "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ryland\\Desktop\\PierresTracker.Solution\\PierresTracker\\Views\\Order\\Delete.cshtml",
+      "TargetPath": "Views\\Order\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

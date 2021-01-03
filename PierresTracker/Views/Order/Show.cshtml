@@ -5,7 +5,7 @@
 <h2>Price: $@Model["order"].Price</h2>
 <h2>Date: @Model["order"].Date</h2>
 <h1>vendor: @Model["vendor"].Name</h1>
-<h2>Vendor Description: @Model["vedor"].Description</h2>
+<h2>Vendor Description: @Model["vendor"].Description</h2>
 
 <form action='/vendors/@Model["vendor"].Id/orders/@Model["order"].Id' method="post">
 <button type="submit">Delete @Model["order"].Title</button>
