@@ -7,20 +7,16 @@ namespace PierresTracker.Models
     private static List<Vendor> _instances = new List<Vendor> { };
     public string Name { get; set; }
     public string Description { get; set; }
-    public int Id { get; set; }
+    public int Id { get; }
     public List<Order> Orders { get; set; }
 
-    public Vendor(string name)
+    public Vendor(string name, string description)
     {
       Name = name;
+      Description = description;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List<Order> { };
-    }
-
-    public void GetDescription(string description)
-    {
-      Description = description;
     }
 
     public static void ClearAll()
@@ -41,6 +37,11 @@ namespace PierresTracker.Models
     public void AddOrder(Order order)
     {
       Orders.Add(order);
+    }
+
+    public void RemoveOrder(Order order)
+    {
+      Orders.Remove(order);
     }
   }
 }
