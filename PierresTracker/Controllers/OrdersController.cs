@@ -27,9 +27,9 @@ namespace PierresTracker.Controllers
     [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Delete(int vendorId, int orderId)
     {
-      Order foundorder=Order.Find(orderId);
+      Order foundOrder = Order.Find(orderId);
       Vendor foundVendor = Vendor.Find(vendorId);
-      foundVendor.RemoveOrder(foundorder);
+      foundVendor.RemoveOrder(foundOrder);
       
       return View();
     }

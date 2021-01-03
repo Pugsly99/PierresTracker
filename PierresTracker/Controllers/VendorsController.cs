@@ -55,9 +55,9 @@ namespace PierresTracker.Controllers
     public ActionResult Delete(int id)
     {
       Vendor foundVendor = Vendor.Find(id);
-      List<Order> vendorOrders =  foundVendor.Orders;
+      List<Order> vendorOrders = foundVendor.Orders;
       vendorOrders.Clear();
-      return View("Destroy", foundVendor);
+      return View("Delete", foundVendor);
     }
   }    
 }

@@ -22,10 +22,10 @@ C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcore
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\PierresTracker.dll
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\PierresTracker.pdb
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\PierresTracker.csproj.CopyComplete
-C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\DeleteAll.g.cshtml.cs
-C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\New.g.cshtml.cs
-C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\Show.g.cshtml.cs
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\Index.g.cshtml.cs
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\New.g.cshtml.cs
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\Show.g.cshtml.cs
 C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\Delete.g.cshtml.cs
+C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Order\DeleteAll.g.cshtml.cs
+C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Order\New.g.cshtml.cs
+C:\Users\Ryland\Desktop\PierresTracker.Solution\PierresTracker\obj\Debug\netcoreapp2.2\Razor\Views\Order\Show.g.cshtml.cs
