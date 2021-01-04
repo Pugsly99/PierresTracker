@@ -16,17 +16,57 @@ namespace PierresTracker.Tests
     [TestMethod]
     public void OrderConstructor_CreateInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test");
+      Order newOrder = new Order("Test", "09/29/1999", 10F, "this is the one");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
+
+      [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newList = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+
     [TestMethod]
-    public void GetTitle_ReturnsTheOrderTitle_String()
+    public void GetAll_ReturnsTheOrders_OrderList()
     {
       string title = "Order";
-      Order newOrder = new Order(title);
-      string result = newOrder.Title;
-      Assert.AreEqual(title, result);
+      string date = "09/29/1999";
+      float price = 10F;
+      string description = "this is the one";
+      Order newOrder = new Order(title, date, price, description);
+
+      string title2 = "Order2";
+      string date2 = "12/24/2020";
+      float price2 = 8F;
+      string description2 = "this is the second";
+      Order newOrder2 = new Order(title2, date2, price2, description2);
+
+      List<Order> newList = new List<Order> { newOrder, newOrder2 };
+      List<Order> result = Order.GetAll();
+      Assert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsExactOrder_Order()
+    {
+      string title = "Order";
+      string date = "09/29/1999";
+      float price = 10F;
+      string description = "this is the one";
+      Order newOrder = new Order(title, date, price, description);
+
+      string title2 = "Order2";
+      string date2 = "12/24/2020";
+      float price2 = 8F;
+      string description2 = "this is the second";
+      Order newOrder2 = new Order(title2, date2, price2, description2);
+
+      Order result = Order.Find(1);
+
+      Assert.AreEqual(newOrder, result);
     }
 
     [TestMethod]
@@ -81,67 +121,6 @@ namespace PierresTracker.Tests
 
 
         Assert.AreEqual(result, description);
-      }
-
-      [TestMethod]
-      public void GetPrice_ReturnOrderPrice_Order()
-      {
-        string name = "Test Order1";
-        Order newOrder = new Order(name);
-
-        int amount = 4;
-        newOrder.Bread(amount);
-        newOrder.Pastry(amount);
-
-        int result = newOrder.Price;
-
-
-        Assert.AreEqual(result, 27);
-      }
-
-      [TestMethod]
-      public void GetAmount_ReturnOrderBreadAmount_Order()
-      {
-        string name = "Test Order1";
-        Order newOrder = new Order(name);
-
-        int amount = 4;
-        newOrder.Bread(amount);
-
-        int result = newOrder.BreadAmount;
-
-
-        Assert.AreEqual(result, 6);
-      }
-
-      [TestMethod]
-      public void GetAmount_ReturnOrderPastryAmount_Order()
-      {
-        string name = "Test Order1";
-        Order newOrder = new Order(name);
-
-        int amount = 4;
-        newOrder.Pastry(amount);
-
-        int result = newOrder.PastryAmount;
-
-
-        Assert.AreEqual(result, 4);
-      }
-
-      [TestMethod]
-      public void GetDate_ReturnOrderDate_Order()
-      {
-        string name = "Test name";
-        Order newOrder = new Order(name);
-
-        string date = "Dec, 18, 2020";
-        newOrder.GetDate(date);
-
-        string result = newOrder.Date;
-
-
-        Assert.AreEqual(result, date);
       }
   }
 }
